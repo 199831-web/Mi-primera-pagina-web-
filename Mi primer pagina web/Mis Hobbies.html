@@ -10,14 +10,12 @@
             background-size: cover;
             background-repeat: no-repeat;
             color: aliceblue;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start; 
-            justify-content: flex-start;
+            display: grid; 
+            grid-template-rows: auto 1fr auto; 
             min-height: 100vh;
             margin: 0;
             padding-left: 20px;
-            box-sizing: border-box; 
+            box-sizing: border-box;
         }
 
         header {
@@ -58,31 +56,43 @@
             transform: scale(1.1);
         }
 
-        #MisHobbiesSection { 
+        main {
+            padding-right: 20px; 
+        }
+
+        #MisHobbiesSection {
             margin-top: 20px;
         }
 
-        .MisHobbies { 
+        .MisHobbies {
 
         }
 
         .MisHobbies h1 {
-            text-align: left; 
+            text-align: left;
             margin-bottom: 10px;
         }
 
         .MisHobbies ul {
-            list-style-type: disc; 
-            padding-left: 20px; 
+            list-style-type: disc;
+            padding-left: 20px;
             margin-top: 5px;
             margin-bottom: 5px;
+        }
+
+        footer {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>MIS AFICIONES</h1>
-
         <nav>
             <a href="Inicio.html">Inicio</a>
             <a href="sobre mi.htm">Sobre Mi</a>
@@ -92,15 +102,18 @@
         </nav>
     </header>
 
-    <section id="MisHobbiesSection">
-        <div class="MisHobbies">
-            <h1>Mis Hobbies</h1>
-            <ul>Hacer Beats</ul>
-            <ul>Hacer graffiti</ul>
-            <ul>Ver Futbol</ul>
-            <ul>Jugar Play</ul>
-        </div>
-    </section>
+    <main>
+        <section id="MisHobbiesSection">
+            <div class="MisHobbies">
+                <h1>Mis Hobbies</h1>
+                <ul>Hacer Beats</ul>
+                <ul>Hacer graffiti</ul>
+                <ul>Ver Futbol</ul>
+                <ul>Jugar Play</ul>
+            </div>
+        </section>
+    </main>
+
     <footer>
         <p>Todos los derechos reservados 2025</p>
     </footer>
