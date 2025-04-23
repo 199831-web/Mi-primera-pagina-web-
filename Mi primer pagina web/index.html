@@ -10,20 +10,13 @@
             background-size: cover;
             background-repeat: no-repeat;
             color: aliceblue;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
+            display: grid; 
+            grid-template-rows: auto auto 1fr auto; 
+            align-items: center; 
+            justify-items: center; 
             min-height: 100vh;
             margin: 0;
         }
-        
-        
-
-
-      
-
-        
 
         header {
             width: 100%;
@@ -38,9 +31,21 @@
         }
 
         header h1 {
-            margin: 10;
+            margin: 0;
             flex-grow: 1;
             text-align: left;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main h1 {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
         }
 
         nav {
@@ -63,22 +68,34 @@
         nav a:hover {
             transform: scale(1.1);
         }
+
+        footer {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>MI PRIMER PAGINA WEB</h1>
-        
     </header>
-    <h1>ANDRES YEPES</h1>
-    
 
-    <nav>
-        
-        <a href="sobre mi.htm">Sobre Mi</a>
-        <a href="Academico.html">Academico</a>
-        <a href="Mis Hobbies.html">Mis Hobbies</a>
-        <a href="Mis proyectos.html">Mis proyestos</a>
-    </nav>
+    <main>
+        <h1>ANDRES YEPES</h1>
+        <nav>
+            <a href="sobre mi.htm">Sobre Mi</a>
+            <a href="Academico.html">Academico</a>
+            <a href="Mis Hobbies.html">Mis Hobbies</a>
+            <a href="Mis proyectos.html">Mis proyestos</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados 2025</p>
+    </footer>
 </body>
 </html>
