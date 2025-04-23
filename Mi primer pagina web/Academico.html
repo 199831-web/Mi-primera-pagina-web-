@@ -10,10 +10,10 @@
             background-size: cover;
             background-repeat: no-repeat;
             color: aliceblue;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end; 
-            justify-content: flex-start;
+            display: grid; 
+            grid-template-rows: auto 1fr auto; 
+            align-items: flex-start;
+            justify-items: flex-end; 
             min-height: 100vh;
             margin: 0;
         }
@@ -36,16 +36,23 @@
             text-align: left;
         }
 
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end; 
+            padding-right: 20px; 
+        }
+
         nav {
             display: flex;
-            align-items: center; 
+            align-items: center;
             margin-top: 20px;
         }
 
         nav a {
             color: black;
             text-decoration: double;
-            margin: 0 10px; 
+            margin: 0 10px;
             padding: 10px 20px;
             background-color: rgba(155, 155, 155, 0.7);
             border-radius: 5px;
@@ -55,22 +62,34 @@
         nav a:hover {
             transform: scale(1.1);
         }
+
+        footer {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>ACADEMICO</h1>
-
-        
-    <nav>
-        <a href="Inicio.html">Inicio</a>
-        <a href="sobre mi.htm">Sobre Mi</a>
-        <a href="Academico.html">Academico</a>
-        <a href="Mis Hobbies.html">Mis Hobbies</a>
-        <a href="Mis proyectos.html">Mis proyestos</a>
-    </nav>
+        <nav>
+            <a href="Inicio.html">Inicio</a>
+            <a href="sobre mi.htm">Sobre Mi</a>
+            <a href="Academico.html">Academico</a>
+            <a href="Mis Hobbies.html">Mis Hobbies</a>
+            <a href="Mis proyectos.html">Mis proyestos</a>
+        </nav>
     </header>
-     
-    
+
+    <main>
+        </main>
+
+    <footer>
+        <p>Todos los derechos reservados 2025</p>
+    </footer>
 </body>
 </html>
